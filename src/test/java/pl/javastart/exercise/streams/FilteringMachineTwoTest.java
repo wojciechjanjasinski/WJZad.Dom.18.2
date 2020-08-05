@@ -36,19 +36,19 @@ public class FilteringMachineTwoTest {
         assertThat(kids, hasItem("Sebastian"));
     }
 
-  //  @Test
-//    public void shouldConvertPeopleToUser() {
-//        // when
-//        List<User> users = machine.convertPeopleToUsers(people);
-//
-//        // then
-//        assertThat(users.size(), is(5));
-//        assertThat(users, hasItem(new User("Tomek", 2, "Tomek_2")));
-//        assertThat(users, hasItem(new User("Ania", 18, "Ania_18")));
-//        assertThat(users, hasItem(new User("Konrad", 44, "Konrad_44")));
-//        assertThat(users, hasItem(new User("Janusz", 52, "Janusz_52")));
-//        assertThat(users, hasItem(new User("Sebastian", 16, "Sebastian_16")));
-//    }
+    @Test
+    public void shouldConvertPeopleToUser() {
+        // when
+        List<User> users = machine.convertPeopleToUsers(people);
+
+        // then
+        assertThat(users.size(), is(5));
+        assertThat(users, hasItem(new User("Tomek", 2, "Tomek_2")));
+        assertThat(users, hasItem(new User("Ania", 18, "Ania_18")));
+        assertThat(users, hasItem(new User("Konrad", 44, "Konrad_44")));
+        assertThat(users, hasItem(new User("Janusz", 52, "Janusz_52")));
+        assertThat(users, hasItem(new User("Sebastian", 16, "Sebastian_16")));
+    }
 
 
 }

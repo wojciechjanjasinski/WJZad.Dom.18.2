@@ -13,7 +13,7 @@ public class FilteringMachine {
 
     public List<Integer> filterOutLowerNumbersThan20(List<Integer> numberList) {
         return numberList.stream()
-                .filter(number -> number > 20)
+                .filter(number -> number >= 20)
                 .sorted()
                 .collect(Collectors.toList());
     }
